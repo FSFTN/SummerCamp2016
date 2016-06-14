@@ -119,14 +119,14 @@ fieldset[disabled] .btn-primary.active {
 
 .btn-xl {
   padding: 20px 40px;
-  border-color: #a01e20;
+  border-color: #cb213d;
   border-radius: 3px;
   text-transform: uppercase;
   font-family: 'PT Sans', sans-serif;
   font-size: 18px;
   font-weight: 700;
   color: #fff;
-  background-color: #a01e20;
+  background-color: #cb213d;
 }
 
 .btn-xl:hover,
@@ -134,9 +134,9 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-  border-color: #a93436;
+  border-color: #cb213d;
   color: #fff;
-  background-color: #a93436;
+  background-color: #cb213d;
 }
 
 .btn-xl:active,
@@ -266,7 +266,7 @@ header {
   text-align: center;
   color: #fff;
   background-attachment: scroll;
-  background-image: url(../img/header-bg.png);
+  background-image: url(../img/header-bg.jpg);
   background-position: center center;
   background-repeat: none;
   -webkit-background-size: cover;
@@ -307,7 +307,7 @@ header .intro-text .intro-heading {
   header .intro-text .intro-lead-in {
     margin-bottom: 25px;
     font-family: 'PT Sans', sans-serif;
-    font-size: 40px;
+    font-size: 75px;
     /*font-style: italic;*/
     line-height: 40px;
   }
@@ -610,16 +610,19 @@ section h3.section-subheading {
 
   .timeline>li .timeline-panel {
     float: left;
-    width: 41%;
+    width: 60%;
     padding: 0 20px 20px 30px;
     text-align: right;
   }
 
   .timeline>li .timeline-image {
-    left: 50%;
+    left: 75%;
     width: 100px;
     height: 100px;
-    margin-left: -50px;
+  }
+  
+   .timeline>li.timeline-inverted .timeline-image {
+    left: 25%;
   }
 
   .timeline>li .timeline-image h4 {
@@ -637,7 +640,10 @@ section h3.section-subheading {
 
 @media (min-width:1200px){
   .timeline:before {
-    left: 49%;
+    left: 75%;
+  }
+  .timeline-inv:before {
+    left: 25%;
   }
   .previous-editions code{
     padding-left: 15%;
@@ -654,7 +660,7 @@ section h3.section-subheading {
 
 
   .timeline>li .timeline-panel {
-    padding: 0 20px 20px;
+    padding: 0 30px 30px;
   }
 
   .timeline>li .timeline-image {
@@ -680,7 +686,7 @@ section h3.section-subheading {
   }
 
   .timeline>li .timeline-panel {
-    padding: 0 20px 20px 100px;
+    padding: 0 20px 20px 20px;
   }
 
   .timeline>li .timeline-image {
@@ -694,7 +700,7 @@ section h3.section-subheading {
   }
 
   .timeline>li.timeline-inverted>.timeline-panel {
-    padding: 0 100px 20px 20px;
+    padding: 0 20px 20px 20px;
   }
 }
 
@@ -724,7 +730,6 @@ aside.clients img {
 
 section#contact {
   background-color: #222;
-  background-image: url(../img/map-image.png);
   background-position: center;
   background-repeat: no-repeat;
 }
